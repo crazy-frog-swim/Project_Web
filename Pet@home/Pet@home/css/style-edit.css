@@ -1,0 +1,186 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans:wght@700&family=Poppins:wght@400;500;600&display=swap');
+
+*{
+  text-decoration: none;  
+  font-family: "Poppins";
+  box-sizing: border-box;
+  padding: 0%;
+  margin: 0px;
+}
+
+body {
+    height: 100vh;
+    width: 100%;
+    margin: 0;
+    justify-content: center; 
+}
+
+
+/*upper nav*/
+nav{
+  height: 8vh;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  background: #1b1b1b;
+  width: 100%;
+  position: absolute;
+  font-family: "Poppins", sans-serif;
+}
+h2 {
+  font-size: 1.5em;
+  margin: auto;
+}
+.logo{
+  display: flex;
+  justify-content: center;
+  width: 20%;
+  color: white;
+  font-size: 27px;
+  letter-spacing: 5px;
+  text-transform: uppercase;
+  font-weight: 600;
+  /* margin: auto; */
+  /* background: orange; */
+  /* line-height: 70px; */
+  /* padding-right: 20%; */
+  /* margin-left: 40px; */
+}
+.paw{
+  color: orange;
+  margin: auto;
+  /* text-align: center; */
+  font-size: 50px;
+  /* background: white; */
+}
+.nav-links{
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  width: 50%;
+  color: white;
+  /* background: red; */
+  /* margin-left: 50%; */
+}
+.view, .insert, .delete, .update{
+position: relative;
+}
+.view ul, .insert ul, .delete ul, .update ul{
+position: absolute;
+top:50px;
+border-top: 5px solid orange;
+background-color: rgb(59, 58, 58);
+width: 200px;
+height: 100px;
+display: flex;
+justify-content: space-around;
+align-items: left;
+flex-direction: column;
+opacity: 0;
+visibility: hidden;
+transition: 0.3s;
+}
+.view li, .insert li, .delete li, .update li{
+width: 100%;
+height: 100%;
+display: flex;
+justify-content: space-around;
+align-items: left;
+flex-direction: column;
+}
+.view li:hover, .insert li:hover, .delete li:hover, .update li:hover{
+background-color: black;
+transition: .3s;
+}
+
+/* nav-link*/
+.nav-links li:hover > ul{
+opacity: 1;
+visibility: visible;
+}
+.nav-links li{
+list-style: none;
+}
+.nav-links a{
+color: white;
+text-decoration: none;
+letter-spacing: 3px;
+padding: 8px 13px;
+border-radius: 5px;
+}
+.nav-links li:hover{
+background: rgb(15, 15, 15);
+transition: .3s;
+}
+
+.topic{
+    /* background: red; */
+    text-align: center;
+    width: 25%;
+    margin: auto;
+    margin-bottom: 2vh;
+    border-bottom: 1px solid black;
+}
+.form{
+    /* background: red; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 50%;
+    /* height: 82vh; */
+    margin: auto;
+    box-shadow: 0px 0px 20px -2px #aaaaaa;
+}
+.img{
+    /* background: red; */
+    text-align: center;
+}
+.enlarge{
+    height: 250px;
+    width: 175px;
+    margin-bottom: 5vh;
+    margin-top: 5vh;
+    /* margin-left: 10vh; */
+}
+.label{
+    /* background: blue; */
+    width: 60vh;
+    /* margin-left: 10vh; */
+    display: flex;
+    /* justify-content: left; */
+    align-items: center;
+    margin-top: 2vh;
+}
+.label label{
+    font-size: 20px;
+    letter-spacing: 1px;
+}
+.label ul{
+    margin-left: 2vh;
+    font-size: 20px;
+    letter-spacing: 1px;
+}
+.label ul input{
+    text-align: center;
+    width: 30vh;
+    border: 3px solid black;
+    padding: 10px 10px;
+    font-size: 16px;
+}
+.form button{
+    border: 0;
+    text-transform: uppercase;
+    padding: 14px 10px;
+    border-radius: 6px;
+    letter-spacing: 2px;
+    font-size: 16px;
+    float: right;
+    margin-top: 2vh;
+    margin-bottom: 2vh;
+    background: rgb(48, 48, 48);
+    color: white;
+}
+.form button:hover{
+    background: rgb(12, 12, 12);    
+    transition: .3s;
+}

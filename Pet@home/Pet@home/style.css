@@ -1,0 +1,225 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans:wght@700&family=Poppins:wght@400;500;600&display=swap');
+
+::-webkit-scrollbar{
+    display: none;
+}
+::selection
+{
+  background: rgb(78, 78, 78);
+  color: white;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins";
+}
+body{
+  background: rgb(224, 224, 224);
+  font-family: "Poppins", sans-serif;;
+}
+nav{
+    height: 8vh;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background: #1b1b1b;
+    width: 100%;
+    /* position: fixed; */
+}
+.logo{
+    display: flex;
+    justify-content: center;
+    width: 20%;
+  color: white;
+  font-size: 27px;
+  letter-spacing: 5px;
+  text-transform: uppercase;
+  font-weight: 600;
+  /* margin: auto; */
+  /* background: orange; */
+  /* line-height: 70px; */
+  /* padding-right: 20%; */
+  /* margin-left: 40px; */
+}
+.paw{
+    color: orange;
+    margin: auto;
+    /* text-align: center; */
+    font-size: 40px;
+    /* background: white; */
+}
+.nav-links{
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  width: 50%;
+  /* background: red; */
+  /* margin-left: 50%; */
+}
+.shop{
+  position: relative;
+}
+.shop ul{
+  position: absolute;
+  top:50px;
+  border-top: 5px solid orange;
+  background-color: rgb(59, 58, 58);
+  width: 200px;
+  height: 100px;
+  display: flex;
+  justify-content: space-around;
+  align-items: left;
+  flex-direction: column;
+  opacity: 0;
+  visibility: hidden;
+  transition: 0.3s;
+}
+.shop li{
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: space-around;
+  align-items: left;
+  flex-direction: column;
+}
+.shop li:hover{
+  background-color: black;
+  transition: .3s;
+}
+.nav-links li:hover > ul{
+  opacity: 1;
+  visibility: visible;
+}
+.nav-links li{
+  list-style: none;
+}
+.nav-links a{
+  color: white;
+  text-decoration: none;
+  letter-spacing: 3px;
+  padding: 8px 13px;
+  border-radius: 5px;
+}
+.nav-links li:hover{
+  background: rgb(15, 15, 15);
+  transition: .3s;
+}
+.container{
+  display: flex;
+  background: white;
+  /* justify-content: space-around; */
+  flex-direction: column;
+  align-items: center;
+  height: 80vh;
+  width: 50%;
+  margin: auto;
+  margin-top: 2vh;
+  /* border: 2px solid black; */
+  box-shadow: 1px 1px 20px -8px;
+}
+.container h1{
+  margin-top: 2vh;
+  margin-bottom: 10vh;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  border-bottom: 1px solid black;
+}
+.info{
+  /* background: red; */
+  height: 40vh;
+  display: flex;
+  flex-direction: column; 
+  justify-content: space-around;
+  align-items: center;
+  margin-bottom: 4vh;
+}
+.cardholder input, .cardnum input{
+  padding: 10px 20px;
+  border-radius: 8px;
+  /* border: none; */
+  border: 1px solid black;
+  font-family: "Poppins";
+  letter-spacing: 1px;
+  width: 40vh;
+}
+.cardholder input:focus, .cardnum input:focus{
+  transition: .3s;
+  box-shadow: 1px 1px 20px -8px;
+  outline: none;
+  border: 2px solid black;
+}
+.cvv{
+  display: flex;
+  flex-direction: column;
+}
+.cvv input{
+  padding: 10px 20px;
+  border-radius: 8px;
+  /* border: none; */
+  border: 1px solid black;
+  font-family: "Poppins";
+  letter-spacing: 1px;
+  width: 100%;
+}
+.cvv input:focus{
+  transition: .3s;
+  box-shadow: 1px 1px 20px -8px;
+  outline: none;
+  border: 2px solid black;
+}
+.cvv a{
+  color: black;
+  text-align: center;
+}
+.cards{
+  /* background: black; */
+  width: 50%;
+  text-align: center;
+  display: flex;
+}
+.cards img{
+  width: 50px;
+  height: 30px;
+  margin: auto;
+}
+.row {
+  /* background: red; */
+  width: 40vh;
+  /* height: 20vh; */
+  display: flex;
+  justify-content: center;
+  /* align-items: center; */
+}
+.row select{
+  width: 100px;
+  font-family: "Poppins";
+  height: 42px;
+  padding: 10px 20px;
+  /* background: red; */
+  /* border-radius: 8px; */
+}
+.pay{
+  /* background: red; */
+  text-align: center;
+}
+.pay .button{
+  padding: 10px 20px;
+  letter-spacing: 2px;
+  font-size: 16px;
+  font-weight: bold;
+  color: white;
+  text-transform: uppercase;
+  border: none;
+  border-radius: 8px;
+  width: 20vh;
+  background: rgb(20, 20, 20);
+  cursor: pointer;
+  /* text-align: center; */
+}
+.pay .button:hover{
+  background: rgb(37, 37, 37);
+  color: rgb(223, 223, 223);
+  transition: .3s;
+}

@@ -1,0 +1,239 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans:wght@700&family=Poppins:wght@400;500;600&display=swap');
+
+::-webkit-scrollbar{
+    display: none;
+}
+::selection
+{
+  background: rgb(78, 78, 78);
+  color: white;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+  /* background-image: url(./images/signup.jpg);
+  background-repeat: no-repeat;
+  background-size: cover; */
+  background: rgb(209, 209, 209);
+  font-family: "Poppins", sans-serif;;
+}
+nav{
+  height: 8vh;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  background: #1b1b1b;
+  width: 100%;
+  position: absolute;
+}
+.logo{
+  display: flex;
+  justify-content: center;
+  font-size: 27px;
+  letter-spacing: 5px;
+  text-transform: uppercase;
+  font-weight: 600;
+  /* margin: auto; */
+  width: 20%;
+  /* margin-right: 10vh; */
+  /* background: orange; */
+  /* line-height: 70px; */
+  /* padding-right: 20%; */
+  /* margin-left: 40px; */
+}
+.logo a{
+  text-decoration: none;
+  color: white;
+  transition: .5s;
+}
+.paw{
+  color: orange;
+  margin: auto;
+  /* text-align: center; */
+  font-size: 40px;
+  /* background: white; */
+}
+.logo a:hover{
+  color: #2e2d2d;
+  /* background: rgb(20, 20, 20); */
+}
+.nav-links{
+display: flex;
+justify-content: space-around;
+align-items: center;
+width: 50%;
+background: rgb(0, 0, 0);
+/* margin-left: 50%; */
+}
+.container1-active{
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  /* position: fixed; */
+  width: 100%;
+  height: 100%;
+  /* top: 50vh; */
+  left: 0%;
+  /* margin: top; */
+  /* background: rgba(0, 0, 0, 0.9); */
+  /* visibility: hidden;
+  opacity: 0; */
+  /* transition: visibility 0s opacity 0.5s; */
+}
+.pop-up{
+  /* display: flex;
+  justify-content: center;
+  align-items: center; */
+  /* flex-direction: column; */
+  /* position: absolute; */
+  /* top: 50%;
+  left: 50%; */
+  background: #292929;
+  height: 450px;
+  width: 400px;
+  box-shadow: 0 0 12px 1px rgb(95, 95, 95);
+  margin-top: 27vh;
+  /* margin: auto;
+  margin-top: 25vh; */
+  /* display: none; */
+}
+.login-title{
+  background: rgb(231, 153, 7);
+  width: 100%;
+  height: 70px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 20px;
+}
+.login-title h1{
+  font-size: 25px;
+  color: white;
+  letter-spacing: 4px;
+  text-transform: uppercase;
+  /* font-weight: 100; */
+  /* background: black; */
+  position: absolute;
+  /* margin-top: 14px; */
+  /* margin: auto; */
+  /* height: 75px; */
+}
+.pop-up form{
+  /* background-color: #292929; */
+  color: white;
+  letter-spacing: 2px;
+  width: 100%;
+  height: 100%;
+  /* text-align: center; */
+  /* margin-top: 20vh; */
+  /* display: flex;
+  flex-direction: column;
+  justify-content: space-around; */
+}
+.txt-input{
+  /* display: flex;
+  justify-content: space-around;
+  flex-direction: column; */
+  /* background: red; */
+  margin: auto;
+  width: 90%;
+  margin-top: 20px;
+  font-size: 15px;
+  /* gap: 10px; */
+}
+.txt-input input{
+  height: 100%;
+  width: 100%;
+  font-family: "Poppins";
+  letter-spacing: 2px;
+  border: 0;
+  outline: 0;
+  padding: 16px;
+  border-radius: 5px;
+  margin-top: 5px;
+  background: #1a1919;
+  color: white;
+  transition: .3s;
+}
+.txt-input input:focus{
+  box-shadow: 0 0 8px 2px #221f1f;
+}
+.box {
+  display: flex;
+  /* background: red; */
+  /* justify-content: center;
+  align-items: center; */
+  flex-direction: column;
+  margin-top: 5vh;
+  /* position: fixed; */
+  /* margin: auto; */
+  /* width: 20%; */
+}
+.login-btn{
+  background: #1a1919;
+  color: white;
+  font-family: "Poppins";
+  text-transform: uppercase;
+  letter-spacing: 3px;
+  font-size: 20px;
+  font-weight: bold;
+  width: 40%;
+  height: 40px;
+  /* display: flex;
+  justify-content: center; */
+  margin: auto;
+  border: 0;
+  border-radius: 5px;
+  transition: .3s;
+}
+.login-btn:hover{
+  /* margin-top: 7.1vh; */
+  background: #141313;
+  cursor: pointer;
+}
+.signup-link{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* background: blue; */
+  margin: auto;
+  /* margin-left: 70px; */
+  /* text-align: center; */
+  width: 70%;
+  height: 4vh;
+  margin-top: 10px;
+  font-size: 14px;
+  color: white;
+  letter-spacing: 1px;
+}
+.signup-link a{
+  color: orange;
+  font-weight: 600;
+  letter-spacing: 3px;
+  text-decoration: none;
+  margin-left: 1vh;
+  /* align-items: center; */
+  /* margin: auto; */
+}
+.error{
+  /* margin-top: 100px; */
+  margin: auto;
+  text-align: center;
+  width: 20%;
+  color: red;
+  position: fixed;
+  /* background: white; */
+}
+.success{
+  /* margin-top: 100px; */
+  margin: auto;
+  text-align: center;
+  width: 20%;
+  color: green;
+  position: fixed;
+  /* background: white; */
+}
